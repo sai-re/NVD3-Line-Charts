@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font: 16px Helvetica, 'sans-serif';
+    line-height: 1.5;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: #3c3c3c;
+    background-color: #f4f4f4;
+}
+
+main {
+    display: block;
+}
+
+/*BEGIN*/
+
+#page-title {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #5cb85c;
+    color: #f4f4f4;
+}
+
+text {
+    font: 12px Helvetica, sans-serif;
+}
+
+svg {
+    display: block;
+}
+
+/*html,
+body,
+svg {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}*/
+
+.dashed {
+    stroke-dasharray: 5, 5;
+}
+
+#chart1,
+#chart2,
+#chart3,
+#chart4 {
+    width: 100%;
+    height: 500px;
+}
+
+.lineContainer {
+    width: 1024px;
+    height: 600px;
+    margin: 2rem auto;
+}
+
+/*TABS*/
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5cb85c;
+    width: 1025px;
+    border: 1px solid #ccc;
+}
+/* Float the list items side by side */
+ul.tab li {
+    float: left;
+}
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #499249;
+}
+/* Create an active/current tablink class */
+ul.tab li a:focus,
+.active {
+    background-color: #499249;
+}
+/* Style the tab content */
+.tabcontent {
+    visibility: hidden;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    text-align: center;
+    width: 100%;
+    background-color: #ffffff;
+}
+.tabcontent h1 {
+    font-size: 1.5em;
+}
+/*show first graph*/
+#age {
+    display: block;
+    visibility: visible;
+}
